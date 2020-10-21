@@ -2,7 +2,7 @@
 
 // This is a PHP comment (on a single line)
 
-/*
+/* cyriaque
     We can write some comments
     on multiple lines
 */
@@ -163,5 +163,3 @@ $contact['Nico'] = '+352434234234';
 
 die('This is going to stop.');
 echo 'Im here, but u will never see me.';
-
-?>
