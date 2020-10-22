@@ -1,4 +1,6 @@
-<?php
+
+
+	<?php
 
 	/*
 	- Exercise 0 :
@@ -62,4 +64,32 @@
 		You can only use 2 variables (your $array and $i doesn't count).
 	*/
 
+<<<<<<< Updated upstream
 	$myArray = [20, -5, 98, 6, 12];
+=======
+
+	/* Exercice  */
+	/* Exercice 0*/
+
+
+
+	/*$charCara = array(
+		'Atk' => 10,
+		'Def' => 15,
+		'Life' => 100
+	);
+*/
+
+
+	/* Exercice 0*/
+
+	$charCara = array(
+		'Atk',
+		'Def',
+		'Life'
+	);
+	foreach ($charCara as $test) {
+
+		echo $test . '<br>';
+	}
+>>>>>>> Stashed changes
