@@ -1,55 +1,49 @@
 <?php
 
-  // 1 . For
-  for ($i=0; $i < 10 ; $i++) { 
-    # code...
-  }
+// 1. For Loop
+for ($i = 0; $i < 10; $i++) {
+    echo $i . '<br>';
+}
 
-  for ($i=0; $i < 10 ; $i++) { 
-    //echo 'Hello<br>';
-  }
-
-  // 2 . While
-  $a = 11;
-  while ($a <= 9) {
-    # code...
-  }
-
-  while ($a <= 9) {
-    //echo 'Hello<br>';
+echo '<hr>';
+// 2. While
+$a = 0;
+while ($a < 10) {
+    echo $a . '<br>';
     $a++;
-  }
+    //Exit the loop : break;
+}
 
-  // 3 . Do...While
-  do {
-    # code...
-  } while ($a <= 9);
+echo '<hr>';
+// 3. Do...while
+$a = 0;
+do {
+    echo $a . '<br>';
+    $a--;
+} while ($a > 0);
 
-  // 4. For...Each
-  
-  // For...Each loop is designed to work with array
-  $movies = array(
-    'NightCrawler', 
-    'Star Wars', 
-    'Bright'
-  );
 
-  foreach ($movies as $key => $value) {
-    echo $key . ' => ' . $value . '<br>';
-  }
+// 4. For...each loop is designed to work with ARRAY
+$movies = [
+    'Star wars',
+    'Jurassic Park',
+    'NightCrawler'
+];
 
-  // $value and $key are temporary variables
-  foreach ($movies as $position => $movie) {
-    echo $movie . ' / ' . $position . '<br>';
-    //echo $value . '<br>';
-  }
+/*echo $movies[0];
+echo $movies[1];
+echo $movies[2];*/
+/*
+for ($i = 0; $i < count($movies); $i++) {
+    echo $movies[$i] . '<br>';
+}*/
 
-  echo '<hr>';
-
-  // Shortest way
-  foreach ($movies as $movie) {
+foreach ($movies as $movie) {
     echo $movie . '<br>';
-  }
+}
+
+foreach ($movies as $position => $movie) {
+    echo $movie . ' at position : ' . $position . '<br>';
+}
 
 
-?>

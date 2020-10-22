@@ -42,6 +42,9 @@
 		Do it by using a for AND a while loop
 	*/
 
+	
+
+
 	/*
 	-Exercise 4 :
 		Use a loop to create a array.
@@ -58,3 +61,5 @@
 		2. Find the position of the max/min also.
 		You can only use 2 variables (your $array and $i doesn't count).
 	*/
+
+	$myArray = [20, -5, 98, 6, 12];
