@@ -9,6 +9,7 @@ echo 'Connexion successfull<br>';
 $db_name = 'moviedb';
 $db_found = mysqli_select_db($conn, $db_name);
 
+
 if ($db_found) {
   echo "$db_name found !<br>";
   // Prepare my query
@@ -25,3 +26,6 @@ if ($db_found) {
 
 // Close the connection to the database
 mysqli_close($conn);
+
+
+// Exercice 1 
