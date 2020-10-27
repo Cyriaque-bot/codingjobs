@@ -16,15 +16,14 @@
     // Retrieve last three movies and display them : 
 
     // Require DB configuration
-    require_once 'database.php';
+    require_once 'Exercicedatabase.php';
 
     // Connect to DB
     $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 
     $sql_query = 'SELECT * 
         FROM movies 
-        ORDER BY views DESC 
-        LIMIT 3';
+        ORDER BY views DESC ';
 
     // Execute the query
     $results = mysqli_query($conn, $sql_query);
