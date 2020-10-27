@@ -28,13 +28,18 @@ $movies = mysqli_fetch_all($results, MYSQLI_ASSOC);
 </head>
 
 <body>
+    <?php require_once 'nav.html'; ?>
+
     <h2>Movies list</h2>
 
     <?php foreach ($movies as $movie) : ?>
         <hr>
         <p>
             <strong>Title : </strong>
-            <?= $movie['title']; ?>
+            
+            <a href="movie.php?id=<?= $movie['id']; ?>">
+                <?= $movie['title']; ?>
+            </a>
         </p>
         <p>
             <strong>Views : </strong>
