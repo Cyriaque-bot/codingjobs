@@ -24,4 +24,12 @@
 	For example :
 		User types 'jur', it should display all movies containing 'jur'.
 
+	-- STEP 1 : Create the form
+	-- STEP 2 : Check if the button was clicked :
+		** If it wasn't, search all movies
+		** If it was, search for the specific movie
+	-- STEP 3 : Display (alreay done)
+
+
+
 ?>
