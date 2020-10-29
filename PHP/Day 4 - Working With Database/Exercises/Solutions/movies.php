@@ -10,21 +10,17 @@ $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 $sql_query = 'SELECT * 
             FROM movies';
 
-<<<<<<< HEAD
-
-=======
 // Check if click on the button (to search)
-if(isset($_POST['submitBtn'])) {
+if (isset($_POST['submitBtn'])) {
     // Retrieve the search value
     $search = $_POST['searchbox'];
-    
+
     $sql_query = 'SELECT * 
             FROM movies
             WHERE title LIKE "%' . $search . '%"';
 }
->>>>>>> dfcb6a74c29e28c8daa8c1619c98939223408763
 
-// Execute the query
+// Execute the query        
 $results = mysqli_query($conn, $sql_query);
 
 // Fetch results as associative array
