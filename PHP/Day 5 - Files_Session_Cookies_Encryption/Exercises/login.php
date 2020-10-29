@@ -19,6 +19,14 @@
     $password = "";
     $submit = "";
 
+    session_start();
+
+    if (isset($submit))
+        if (isset($_SESSION['page_view']))
+            $_SESSION['page_view'] += 1;
+        else
+            $_SESSION['page_view'] = 1;
+
 
     ?>
 
