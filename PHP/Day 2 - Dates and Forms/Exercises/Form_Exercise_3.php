@@ -34,3 +34,98 @@
 
 
  ?>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Document</title>
+ </head>
+ 
+ 
+ 
+ <body>
+
+<?php
+/*
+$Email=""; 
+$password="";
+$subbutton="";	
+$at="@"; 
+$pos="";
+
+if (isset($_POST['subbutton'])) {
+	$pos= strpos($_POST['Email'],$at );
+}
+
+if ($pos=== false){
+	echo '<span style ="color:red;">invalid email </span>';
+} else{
+	echo '<span style ="color:green;">valid email</span>';
+}
+*/
+?>
+
+<!-- 
+
+<form action="" method='post'>
+<input type="text" name="Email" placeholder="Email"  value='<?php echo"$Email" ?>'> <br>
+<input type="text" name="password" placeholder="password"  value='<?php echo"$password" ?>'> 
+<input type="submit" name="subbutton"  value = "soumettre"> 
+</form>
+
+ </body>
+ </html>
+ -->
+<?php 
+ echo '<br>';
+ echo '<br>';
+ echo '<br>';
+ echo '<hr>';
+ ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<?php 
+ /* exercice 2  */
+ 
+ $a="";
+ $x="";
+ $subbutton="";
+
+ 
+ //for ($x=1; $x <11 ;  $x++) { 
+if(isset($_POST['subbutton'])){
+	
+	$a = (int)( $_POST['x'])*2  ;
+
+	echo("$a");
+	
+}
+
+// }
+ 
+ // Modify this script to give the multiplication table of any number ($x for example) in a table
+ 
+ ?>
+<form action="" method="post">
+
+<input type="text" name="x" placeholder="resultat"  value='<?php echo "$x" ?>'> 
+<input type="submit" name="subbutton"  value = "soumettre"> 
+</form>	
+
+</body>
+</html>
+ 
+
+
