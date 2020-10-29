@@ -2,7 +2,7 @@
 
 // This is a PHP comment (on a single line)
 
-/*
+/* cyriaque
     We can write some comments
     on multiple lines
 */
@@ -14,13 +14,13 @@ $height = 2.5; // float/double
 $isThisTrue = false;
 
 // Display type of a variable :
-echo $firstName . ' is of type : ' . 
+echo $firstName . ' is of type : ' .
     gettype($firstName) . '<br>';
-echo $populationInLux . ' is of type : ' . 
+echo $populationInLux . ' is of type : ' .
     gettype($populationInLux) . '<br>';
-echo $height . ' is of type : ' . 
+echo $height . ' is of type : ' .
     gettype($height) . '<br>';
-echo $isThisTrue . ' is of type : ' . 
+echo $isThisTrue . ' is of type : ' .
     gettype($isThisTrue) . '<br>';
 
 // Display content & type :
@@ -105,7 +105,7 @@ $myArray = array();
 $movies = [
     0 => 'NightCrawler',
     1 => 'Star Wars',
-    2 => 'Jurassic Park' 
+    2 => 'Jurassic Park'
 ];
 
 
@@ -163,5 +163,3 @@ $contact['Nico'] = '+352434234234';
 
 die('This is going to stop.');
 echo 'Im here, but u will never see me.';
-
-?>

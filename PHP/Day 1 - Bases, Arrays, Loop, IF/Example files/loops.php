@@ -11,6 +11,7 @@ $a = 0;
 while ($a < 10) {
     echo $a . '<br>';
     $a++;
+<<<<<<< Updated upstream
     //Exit the loop : break;
 }
 
@@ -47,3 +48,34 @@ foreach ($movies as $position => $movie) {
 }
 
 
+=======
+  }
+
+  // 3 . Do...While
+  do {
+    # code...
+  } while ($a <= 9);
+
+  // 4. For...Each
+  
+  // For...Each loop is designed to work with array
+  $movies = array(
+    'NightCrawler', 
+    'Star Wars', 
+    'Bright'
+  );
+
+  foreach ($movies as $key => $value) {
+    echo $key . ' => ' . $value . '<br>';
+  }
+
+  // $value and $key are temporary variables
+  foreach ($movies as $position => $movie) {
+    echo $movie . ' / ' . $position . '<br>';
+    //echo $value . '<br>';
+  }
+
+  echo '<hr>';
+
+  // Shortest way
+>>>>>>> Stashed changes
