@@ -3,7 +3,7 @@
 
         // Retrieve form data and trim
         $mail = trim($_POST['email']);
-        $password = trim($_POST['password']);
+        $password = htmlspecialchars(trim($_POST['password']));
 
         require_once 'database.php';
 

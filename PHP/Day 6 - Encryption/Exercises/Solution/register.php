@@ -21,10 +21,10 @@
 
     if(isset($_POST['registerBtn'])) {
         // Validations on the inputs
-        $username = trim($_POST['username']);
+        $username = strip_tags(trim($_POST['username']));
         $mail = trim($_POST['email']);
         $sanitizeEmail = filter_var($mail, FILTER_SANITIZE_EMAIL);
-        $password = trim($_POST['password']);
+        $password = htmlspecialchars(trim($_POST['password']));
 
         if(empty($username)) {
             $errors['username'] = 'Username is mandatory.';
