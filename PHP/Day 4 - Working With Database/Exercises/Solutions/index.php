@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    <?php require_once 'nav.html'; ?>
+    <?php   require_once 'nav.html'; ?> 
 
-    <h2>Welcome to my movie website</h2>
+       <h2>Welcome to my movie website</h2>
 
-    <?php
+    <?php 
     // Retrieve last three movies and display them : 
 
     // Require DB configuration
