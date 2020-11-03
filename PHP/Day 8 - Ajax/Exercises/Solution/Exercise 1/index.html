@@ -30,11 +30,11 @@
       $(function () {
         $('input[type="submit"]').click(function (e) {
           e.preventDefault();
-          
+
           $.ajax({
             url: "addMovie.php",
             method: "post",
-            data: $("form").serialize(),
+            data: $("form").serialize()
           })
             .done(function (result) {
               // If ajax call worked
