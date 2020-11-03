@@ -18,5 +18,9 @@
 		If there is a problem with the form display an error message (color red)
 		If everything went fine, display a success message (color green)
 
+	- Step 4 :
+		You should display a list of directors (dropdown) in the form.
+		User can select among all director and choose one of them to link it with the movie.
+
 
 */
