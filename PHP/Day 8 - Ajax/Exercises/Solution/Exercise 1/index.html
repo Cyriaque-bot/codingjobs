@@ -12,7 +12,14 @@
     <form method="POST">
       <input type="text" name="title" placeholder="Movie title" /><br />
       <input type="number" name="views" placeholder="Views" /><br />
-      <input type="number" name="director" placeholder="Director ID" /><br />
+      
+      <select name="directors" id="directors">
+        <option value="none">--Please choose a director--</option>
+      </select>
+
+
+
+      <br />
       <input type="submit" name="submit" value="Insert Movie" />
     </form>
 
@@ -28,13 +35,15 @@
     */
 
       $(function () {
+        // AJAX Call to insert the movie
         $('input[type="submit"]').click(function (e) {
           e.preventDefault();
 
           $.ajax({
             url: "addMovie.php",
             method: "post",
-            data: $("form").serialize()
+            data: $("form").serialize(),
+
           })
             .done(function (result) {
               // If ajax call worked
@@ -45,6 +54,21 @@
               console.log("AJAX ERROR");
             });
         });
+
+        // AJAX Call to get the directors list
+        $.ajax({
+          url: "getDirectors.php",
+          method: "post"
+        })
+          .done(function (result) {
+            // If ajax call worked
+            $("#directors").html(result);
+          })
+          .fail(function (result) {
+            // If AJAX failed
+            console.log("AJAX ERROR");
+          });
+          
       });
     </script>
   </body>
