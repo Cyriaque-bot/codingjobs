@@ -15,7 +15,7 @@ if (!empty($_POST)) {
     $conn = mysqli_connect('localhost', 'root', 'root', 'movie_db');
 
     $query = "INSERT INTO movies(title, views, director_id)
-    VALUES('" . $_POST['title'] . "', '" . $_POST['views']  ."', " . $_POST['director'] . ")";
+    VALUES('" . $_POST['title'] . "', '" . $_POST['views']  ."', " . $_POST['directors'] . ")";
 
     // execute the query
     $result_query = mysqli_query($conn, $query);
