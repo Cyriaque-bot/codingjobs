@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 echo '<hr>';
 echo '<p style="font-weight: 900"> FIZZBUZZ EXERCISE </p>';
@@ -17,18 +17,19 @@ Examples :
 		. if the number is divisible by 5 : display 'Buzz'
 		. if the number is divisible by 3 AND by 5 : display 'FizzBuzz'
 		. else : display the number 'n'*/
-		function FizzBuzz($array) {
-			foreach($array as $value) {
-				if(($value % 3 == 0) && ($value % 5 == 0))
-					echo 'FizzBuzz<br>';
-				elseif($value % 5 == 0)
-					echo 'Fizz<br>';
-				elseif($value % 3 == 0)
-					echo 'Buzz<br>';
-				else
-					echo $value . '<br>';
-			}
-		}
+function FizzBuzz($array)
+{
+	foreach ($array as $value) {
+		if (($value % 3 == 0) && ($value % 5 == 0))
+			echo 'FizzBuzz<br>';
+		elseif ($value % 5 == 0)
+			echo 'Fizz<br>';
+		elseif ($value % 3 == 0)
+			echo 'Buzz<br>';
+		else
+			echo $value . '<br>';
+	}
+}
 
-		$myArray = [5, 15, 6, 7];
-		FizzBuzz($myAarray);
+$myArray = [5, 15, 6, 7];
+FizzBuzz($myAarray);
