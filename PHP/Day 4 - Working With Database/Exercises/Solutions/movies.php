@@ -11,10 +11,10 @@ $sql_query = 'SELECT *
             FROM movies';
 
 // Check if click on the button (to search)
-if(isset($_POST['submitBtn'])) {
+if (isset($_POST['submitBtn'])) {
     // Retrieve the search value
     $search = $_POST['searchbox'];
-    
+
     $sql_query = 'SELECT * 
             FROM movies
             WHERE title LIKE "%' . $search . '%"';
@@ -51,7 +51,7 @@ $movies = mysqli_fetch_all($results, MYSQLI_ASSOC);
         <hr>
         <p>
             <strong>Title : </strong>
-            
+
             <a href="movie.php?id=<?= $movie['id']; ?>">
                 <?= $movie['title']; ?>
             </a>
