@@ -5,6 +5,10 @@
 	
 	1. First, you have to add an attribut to the 'movies' table.
 	Call this attribut 'poster', it'll save the path of the poster (image) file for each movie
+   
+	 
+
+
 
 	2. Create a page 'index.php'.
 	This page will display a nice message like 'Welcome to the freakin movie website' (or whatever)
