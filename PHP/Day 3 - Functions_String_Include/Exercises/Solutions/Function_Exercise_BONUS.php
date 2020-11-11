@@ -32,4 +32,3 @@ Examples :
 
 		$myArray = [5, 15, 6, 7];
 		FizzBuzz($myAarray);
-?>
