@@ -41,7 +41,7 @@
 
     */
 
-    /*
+/*
         SCOPE : 
             'public' : specify that the property or method will be accessible from anywhere (in your code)
 
@@ -51,25 +51,22 @@
         
         This is to hide the details of the implementation and to expose only methods
     */
-    
-    // Include the class
-    require_once 'Car.php';
 
-    // Create an object : Instance of a class.
-    $myCar = new Car('Red', 'Ferrari', 1);
-    
-    // Access a property of my object
-    $myCar->makeSound();
-    $myCar->category = 'sport';
-    $myCar->setColor('Yellow');
-    echo $myCar->getColor();
+// Include the class
+require_once 'Car.php';
 
-    echo $myCar;
-    var_dump($myCar);
+// Create an object : Instance of a class.
+$myCar = new Car('Red', 'Ferrari', 1);
 
-    // I can create as much objects(car) as I want 
-    $anotherCar = new Car('Blue', 'BMW', 'SUV');
-    var_dump($anotherCar);
+// Access a property of my object
+$myCar->makeSound();
+$myCar->category = 'sport';
+$myCar->setColor('Yellow');
+echo $myCar->getColor();
 
+echo $myCar;
+var_dump($myCar);
 
-
+// I can create as much objects(car) as I want 
+$anotherCar = new Car('Blue', 'BMW', 'SUV');
+var_dump($anotherCar);
