@@ -29,7 +29,7 @@
   Use Example :
  */
 
-require_once 'HtmlString.php';
+require_once 'Solutions/HtmlString.php';
 
 $markup = new HtmlString();
 $markup->setString('My strinnnng');
@@ -47,4 +47,3 @@ echo $bold; /* Display <b>My strinnnng</b> */
 
 $markup = new HtmlString('My strinnnnng');
 echo $markup->getBoldString();
-
