@@ -57,12 +57,12 @@ class CoffeeCup
     public function reHeat($temp)
     {
         $this->_temperature += $temp;
-        echo 'Coffee warmed up at ' . $this->_temperature . ' degree celcius';
+        echo 'Coffee warmed up at ' . $this->_temperature . ' degree celcius<br>';
     }
 
     public function coolDown($temp)
     {
         $this->_temperature -= $temp;
-        echo 'Coffee cooled down at ' . $this->_temperature . ' degree celcius';
+        echo 'Coffee cooled down at ' . $this->_temperature . ' degree celcius<br>';
     }
 }
