@@ -20,7 +20,24 @@
 	$myCoffee->setTemperature(65);
 */
 
-require_once 'Solutions/CoffeeCup.php';
+// require_once 'Solutions/CoffeeCup.php';
+
+// $myCoffee = new CoffeeCup(33);
+// // $myCoffee->setQuantity(20);
+// // $myCoffee->setBrand('Malongo');
+// $myCoffee->setTemperature(65);
+// $myCoffee->sip(3);
+// $myCoffee->sip(20);
+
+// echo '<pre>';
+// var_dump($myCoffee);
+// echo '</pre>';
+
+// $myCoffee->refill();
+
+// echo '<pre>';
+// var_dump($myCoffee);
+// echo '</pre>';
 
 
 /*
@@ -93,6 +110,8 @@ require_once 'Solutions/CoffeeCup.php';
 	}
 
 */
+
+require_once 'Solutions/CoffeeCup.php';
 
 $myCoffee = new CoffeeCup(20, 'Malongo', 65); // 20 cl, brand Malongo, 65 °C
 
