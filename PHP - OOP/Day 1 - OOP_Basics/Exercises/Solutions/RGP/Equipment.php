@@ -16,4 +16,18 @@ class Equipment
         $this->_bonusDef = $def;
         $this->_bonusLife = $life;
     }
+
+    public function getType()
+    {
+        return strtolower($this->_type);
+    }
+
+    public function __toString()
+    {
+        return "Name : $this->_name<br>
+        Type : $this->_type<br>
+        Atk : $this->_bonusAtk<br>
+        Def : $this->_bonusDef<br>
+        Life : $this->_bonusLife";
+    }
 }
