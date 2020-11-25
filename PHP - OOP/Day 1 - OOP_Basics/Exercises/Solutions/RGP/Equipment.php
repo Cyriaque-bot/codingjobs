@@ -17,6 +17,11 @@ class Equipment
         $this->_bonusLife = $life;
     }
 
+    public function getType()
+    {
+        return strtolower($this->_type);
+    }
+
     public function __toString()
     {
         return "Name : $this->_name<br>

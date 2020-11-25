@@ -7,21 +7,30 @@ $legolas = new Character('Elf');
 $orc = new Character('Orc');
 
 $sword = new Equipment('Sword', 'Death Sword', 10, 0, 0);
+$shield = new Equipment('Shield', 'My own shield', 0, 20, 0);
+$hammer = new Equipment('Hammer', 'My own hammer', 10, 5, 0);
 
-echo $legolas->addEquipment($sword);
-// echo $legolas->removeEquipment();
+echo $legolas->addEquipment($sword) . '<br>';
+echo $legolas->addEquipment($sword) . '<br>';
+echo $legolas->addEquipment($sword) . '<br>';
+echo $legolas->addEquipment($shield) . '<br>';
+echo $legolas->addEquipment($shield) . '<br>';
+echo $legolas->removeEquipment($hammer) . '<br>';
+
+echo '<hr>';
 $legolas->displayEquipment();
 
-echo '<pre>';
-var_dump($legolas);
-echo '</pre>';
 
-echo '<pre>';
-var_dump($orc);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($legolas);
+// echo '</pre>';
 
-echo '<pre>';
-var_dump($sword);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($orc);
+// echo '</pre>';
+
+// echo '<pre>';
+// var_dump($sword);
+// echo '</pre>';
 
 echo '<hr>';
