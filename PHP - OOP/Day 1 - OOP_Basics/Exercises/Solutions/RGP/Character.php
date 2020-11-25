@@ -23,3 +23,4 @@ class Character
             $this->_warCry = 'wwouogrouroulou mlll !!';
     }
 }
+     
