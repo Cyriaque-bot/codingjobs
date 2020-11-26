@@ -2,19 +2,25 @@
 // Retrieve a specific movie and display it : 
 
 // Retrieve the movie id
-$id = $_GET['id'];
+$id = $_GET['name'];
 
 // Require DB configuration
-require_once 'database.php';
+require_once 'Exercicedatabase.php';
 
 // Connect to DB
 $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 
-$sql_query = 'SELECT * 
+$sql_query =/* 'SELECT * 
             FROM movies
             INNER JOIN directors 
             ON movies.director_id = directors.id
-            WHERE movies.id = ' . $id;
+            WHERE movies.id = ' . $id;*/
+
+    'SELECT * 
+            FROM movies
+            INNER JOIN directors 
+            ON movies.director_id = directors.id
+            WHERE movies.id like (' % $id % ')';
 
 // Execute the query
 $results = mysqli_query($conn, $sql_query);
@@ -39,6 +45,7 @@ $numOfResult = mysqli_num_rows($results);
     <h2>Movie</h2>
 
     <?php
+
     if ($numOfResult == 0)
         echo 'Movie was not found';
     else {
@@ -47,10 +54,10 @@ $numOfResult = mysqli_num_rows($results);
         echo 'Title : ' . $movie['title'] . '<br>';
         echo 'Views : ' . $movie['views'] . '<br>';
         echo 'Director : ' . $movie['name'] . '<br>';
-        echo '<img src="images/' . $movie['poster'] . '" width="100px">';
+        echo '<img src="../images/' . $movie['poster'] . '" width="100px">';
     }
     ?>
-
+    <input type="text" name="x" placeholder="search ..." value="" <?php $id ?> ">
 </body>
 
 </html>

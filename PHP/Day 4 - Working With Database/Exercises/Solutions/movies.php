@@ -2,7 +2,7 @@
 // Retrieve all movies and display them : 
 
 // Require DB configuration
-require_once 'database.php';
+require_once 'Exercicedatabase.php';
 
 // Connect to DB
 $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
@@ -11,16 +11,16 @@ $sql_query = 'SELECT *
             FROM movies';
 
 // Check if click on the button (to search)
-if(isset($_POST['submitBtn'])) {
+if (isset($_POST['submitBtn'])) {
     // Retrieve the search value
     $search = $_POST['searchbox'];
-    
+
     $sql_query = 'SELECT * 
             FROM movies
             WHERE title LIKE "%' . $search . '%"';
 }
 
-// Execute the query
+// Execute the query        
 $results = mysqli_query($conn, $sql_query);
 
 // Fetch results as associative array
@@ -40,7 +40,12 @@ $movies = mysqli_fetch_all($results, MYSQLI_ASSOC);
 <body>
     <?php require_once 'nav.html'; ?>
 
-    <h2>Movies list</h2>
+    $search="";
+    $submit="";
+    <h2>movies list</h2>
+
+    <input type="text" name="" placeholder="search..." value="<?php echo $search ?>">
+    <input type="submit" name="submit" value="Subuton">
 
     <form action="" method="post">
         <input type="text" name="searchbox" placeholder="Search for a movie">
@@ -51,7 +56,7 @@ $movies = mysqli_fetch_all($results, MYSQLI_ASSOC);
         <hr>
         <p>
             <strong>Title : </strong>
-            
+
             <a href="movie.php?id=<?= $movie['id']; ?>">
                 <?= $movie['title']; ?>
             </a>

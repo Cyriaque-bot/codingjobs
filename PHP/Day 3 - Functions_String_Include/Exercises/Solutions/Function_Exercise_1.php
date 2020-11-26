@@ -173,7 +173,8 @@ Example :
     	> Displays <img src='skate.jpg'>
 
 */
-function htmlImages($src) {
+function htmlImages($src)
+{
 	echo "<img src='$src'>";
 }
 
@@ -199,8 +200,9 @@ Write a function that:
     - Call your function with a single number: 4
 */
 
-function multiply2($x=1, $y=1) {
-	return ($x*$y);
+function multiply2($x = 1, $y = 1)
+{
+	return ($x * $y);
 }
 
 echo multiply2(10, 2) . '<br>';
@@ -226,8 +228,8 @@ function reverseArray($array)
 {
 	$size = count($array);
 	for ($i = 0; $i < $size / 2; $i++) {
-		$temp = $array[$size-1 -$i];
-		$array[$size-1 -$i] = $array[$i];
+		$temp = $array[$size - 1 - $i];
+		$array[$size - 1 - $i] = $array[$i];
 		$array[$i] = $temp;
 	}
 
@@ -253,13 +255,14 @@ Hint: use a function that allows you to split a sentence into words (already see
 
 */
 
-function countWords($text) {
+function countWords($text)
+{
 	$words = explode(" ", $text);
 	return count($words);
 }
 
 $myString = "Helllooooo broooo how are you?";
-echo 'String contains ' . countWords($myString) . ' words'; 
+echo 'String contains ' . countWords($myString) . ' words';
 
 echo '<hr>';
 echo '<p style="font-weight: 900"> EXERCISE 10 </p>';
@@ -280,15 +283,16 @@ Expected result :
             ....... );
 */
 
-function countEachWords($text) {
+function countEachWords($text)
+{
 	// Convert string to array
 	$words = explode(' ', $text);
 	// Initialize final array
 	$finalArray = array();
 
 	// Count number for each word
-	foreach($words as $word) {
-		if(isset($finalArray[$word]))
+	foreach ($words as $word) {
+		if (isset($finalArray[$word]))
 			$finalArray[$word] += 1;
 		else
 			$finalArray[$word] = 1;
