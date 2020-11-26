@@ -10,6 +10,7 @@
 	Step 1 : 
 		Show'em some respect and rename your class.
 
+		
 	Step 2 :
 		An adventurers have now a speed property.
 
