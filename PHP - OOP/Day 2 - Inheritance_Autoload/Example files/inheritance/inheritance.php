@@ -46,9 +46,12 @@ class Car extends Vehicles
     }
 }
 
+$vehicle = new Truck(4, 'bmw', 's1');
+var_dump($vehicle);
+
 $myTruck = new Truck();
 $myTruck->makeSound();
 
 $myCar = new Car();
 $myCar->makeSound();
-//var_dump($myTruck);
+// //var_dump($myTruck);

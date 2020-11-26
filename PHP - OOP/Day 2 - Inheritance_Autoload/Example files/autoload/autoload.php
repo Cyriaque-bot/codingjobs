@@ -2,7 +2,7 @@
 
 function projectAutoLoad($class)
 {
-    require_once 'classes/' . $class . '.php';
+    require_once 'claszses/' . $class . '.php';
 }
 
 spl_autoload_register('projectAutoLoad');

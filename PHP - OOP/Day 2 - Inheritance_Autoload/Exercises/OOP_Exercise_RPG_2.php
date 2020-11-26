@@ -12,7 +12,7 @@
 
 		
 	Step 2 :
-		An adventurers have now a speed property.
+		An adventurer have now a speed property.
 
 	Step 3 :
 	
@@ -44,5 +44,3 @@
 
 	For the 'relous' : you can change the game is designed.
 */
-
- ?>
